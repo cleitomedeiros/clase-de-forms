@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <title>Document</title>
+
+ <title>Payment</title>
 </head>
 <body>
+    <div>
+        <div><h1>Card Payment</h1></div>
+        <div><p><i>use your credit card details</i></p></div>
     <form class="row g-3">
         <div class="col-md-4">
           <label for="inputCard" class="form-label">Card#</label>
@@ -59,30 +65,36 @@
 
          <div>
          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">Master Card</label>
+            <input class="form-check-input" type="radio" id="gridCheck1" name="cards">
+            <label class="form-check-label" for="gridCheck1"><i class="fa-brands fa-cc-mastercard"></i>Master Card</label>
+            
           </div>
 
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">Visa</label>
+            <input class="form-check-input" type="radio" id="gridCheck2" name="cards"> 
+            <label class="form-check-label" for="gridCheck1"><i class="fa-brands fa-cc-visa"></i>Visa</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">Visa Credit</label>
+            <input class="form-check-input" type="radio" id="gridCheck3" name="cards">
+            <label class="form-check-label" for="gridCheck1"><i class="fa-regular fa-credit-card"></i>Visa Credit</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">PayPal</label>
+            <input class="form-check-input" type="radio" id="gridCheck4" name="cards">
+            <label class="form-check-label" for="gridCheck1"><i class="fa-brands fa-paypal"></i>Paypal</label>
           </div>
         </div>
 
         </div>
-        <div class="col-12" >
+        <div class="botones">
+        <div class="col-12 botones" >
             <button type="button" class="btn btn-secondary">Cancel</button>
           <button type="submit" class="btn btn-primary">Send</button>
         </div>
+    </div>
       </form>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    </div>
+    </body>
 </html>
